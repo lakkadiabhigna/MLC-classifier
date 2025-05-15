@@ -1,8 +1,9 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://lakkadiabhigna:ooZyRMV7lZqDngnz@mlc.m3pno2x.mongodb.net/mlc-classifier?retryWrites=true&w=majority&appName=mlc', {
+    await mongoose.connect(process.env.MONGO_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
