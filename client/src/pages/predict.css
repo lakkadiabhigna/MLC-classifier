@@ -1,0 +1,96 @@
+/* src/pages/FormStyles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.form-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.form-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.form-control:focus {
+  outline: none;
+  border: 1px solid #666;
+  background-color: #2a2a2a;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #666;
+}
+
+.result-text {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #222;
+  color: #eee;
+  text-align: center;
+  font-size: 15px;
+}
+.result-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}

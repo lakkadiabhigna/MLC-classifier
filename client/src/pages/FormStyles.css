@@ -1,0 +1,140 @@
+/* Home Container (Full Height with Black Background) */
+.home-container {
+  background-color: #000; /* Solid black background */
+  min-height: 100vh; /* Ensure full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0; /* No padding to avoid extra space */
+  margin: 0; /* Ensure no extra margin */
+}
+
+/* Card Container for Horizontal Layout with Wrapping */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /*Allow cards to wrap to the next line */
+  flex-direction: row;
+  gap: 90px; /* Spacing between cards */
+  justify-content: flex-start;
+  padding: 40px 0; /* Padding around cards */
+  margin-bottom: 40px; /* Spacing from the rest of the page content */
+}
+
+/* Card Styling */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 10px;
+  padding: 30px;
+  width: 300px; /* Adjust card width */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.card p, .card ul {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.card a {
+  color: #8ab4f8;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+    overflow-x: hidden; /* Hide horizontal scroll on small screens */
+    align-items: center; /* Center cards vertically */
+  }
+
+  .card {
+    width: 90%; /* Cards will take more width on small screens */
+    max-width: 500px; /* Max width for cards */
+  }
+}
+/* FAQ Section Card */
+.card ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px; /* Add space above the list */
+}
+
+.card li {
+  margin-bottom: 20px; /* Add space between list items */
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.card li strong {
+  font-weight: 600;
+  color: #fff;
+}
+
+.card li a {
+  color: #8ab4f8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card li a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #000;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #333; /* Add this line */
+}
+
+
+.card.highlight {
+  animation: highlightEffect 1s ease-in-out;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.8); /* Bright glow effect */
+}
+
+@keyframes highlightEffect {
+  0% {
+    transform: scale(1.02);
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+  50% {
+    transform: scale(1.03);
+    background-color: rgba(0, 123, 255, 0.2);
+  }
+  100% {
+    transform: scale(1.02);
+    background-color: transparent;
+  }
+}
+
+
